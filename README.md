@@ -101,14 +101,14 @@ async function getTableRowsWithFilterAndSort(variable_name, filter_variable_name
 }
 ```
 
-Available methods on '_context' object:
+Available methods on `_context` object:
 ```    
 async function logger(logLevel, message) {
     // logLevel is a string indicating log level such as 'error', 'debug', 'info'
     // message is plain JSON with your logging data
 }
 ```
-Available Functions on '_context.emailLib' object: 
+Available Functions on `_context.emailLib` object: 
 ```    
 async function sendMail(messageData) {
     messageData = { 
@@ -132,7 +132,7 @@ function compileHandleBarTemplate(template_string, data) {
     // Output: compiled template in string type
 }
 ```
-Available methods on '_context.fileLib' object: 
+Available methods on `_context.fileLib` object: 
 ```    
 async function storeAsset(asset_name, contentType, data) {
     // asset_name: name your file
