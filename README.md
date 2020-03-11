@@ -34,7 +34,7 @@ Inside your function you have access `_context` object which has following metho
 
 ```
 
-Available Functions on '_context.dbLib' object: 
+Available methods on '_context.dbLib' object: 
 
 ```
 async function createVariable(name, type, value, documentId) {
@@ -101,7 +101,7 @@ async function getTableRowsWithFilterAndSort(variable_name, filter_variable_name
 }
 ```
 
-Available Functions on '_context' object:
+Available methods on '_context' object:
 ```    
 async function logger(logLevel, message) {
     // logLevel is a string indicating log level such as 'error', 'debug', 'info'
@@ -132,7 +132,7 @@ function compileHandleBarTemplate(template_string, data) {
     // Output: compiled template in string type
 }
 ```
-Available Functions on '_context.fileLib' object: 
+Available methods on '_context.fileLib' object: 
 ```    
 async function storeAsset(asset_name, contentType, data) {
     // asset_name: name your file
