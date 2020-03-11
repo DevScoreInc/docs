@@ -1,6 +1,6 @@
 # DevScore Documentation
 
-DevScore is an Automation PAAS for developers. DevScore makes it super easy to automate SDLC processes, Service integrations, Webhook receiever and broadcaster, workflow automation, CI/CD automation and many more use cases.
+DevScore is an Automation PaaS for developers. DevScore makes it super easy to automate SDLC processes, Service integrations, Webhook receiever and broadcaster, workflow automation, CI/CD automation and many more use cases.
 
 
 DevScore provides Javascript runtime for business logic, database for storing your data and state management, POST and GET webhooks, and cronjob. 
