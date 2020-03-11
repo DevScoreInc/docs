@@ -3,9 +3,11 @@
 DevScore is an Automation PaaS for developers. DevScore makes it super easy to automate SDLC processes, Service integrations, Webhook receiever and broadcaster, workflow automation, CI/CD automation and many more use cases.
 
 
-DevScore provides Javascript runtime for business logic, database for storing your data and state management, POST and GET webhooks, and cronjob. 
+DevScore provides [Javascript runtime](https://app.devscore.dev/functions/editor) for business logic, [Database](https://app.devscore.dev/datasource) for storing your data and state management, POST and GET [Webhooks](
+https://app.devscore.dev/functions/webhook), and [Cronjob](https://app.devscore.dev/functions/cronjob) for invoking your functions on defined schedules. 
 
-[Start using DevScore](https://app.devscore.dev/login "DevScore")
+
+[Start using DevScore](https://app.devscore.dev/login)
 
 Inside your function you have access `_context` object which has following methods:
 ```
