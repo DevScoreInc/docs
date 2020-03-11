@@ -7,7 +7,7 @@ DevScore provides [Javascript runtime](https://app.devscore.dev/functions/editor
 https://app.devscore.dev/functions/webhook), and [Cronjob](https://app.devscore.dev/functions/cronjob) for invoking your functions on defined schedules. 
 
 
-Inside your function you have access `_context` object which has following methods:
+Inside your function you have access to `_context` object which has following methods:
 ```
 '_context' : 
     'dbLib.createVariable': Async Function to create variable in the database 
