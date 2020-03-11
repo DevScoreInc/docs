@@ -3,8 +3,11 @@
 DevScore is an Automatio PAAS for developers. DevScore makes it super easy to automate SDLC processes, Service integrations, Webhook receiever and broadcaster, workflow automation, CI/CD automation and many more use cases.
 
 
+DevScore provides Javascript runtime for business logic, database for storing your data and state management, POST and GET webhooks, and cronjob. 
 
-Function Global variable
+
+
+Inside your function you have access `_context` object which has following methods.
 ```
     '_context' : it is an object with following attributes 
         'dbLib.createVariable': Async Function to create variable in the database 
