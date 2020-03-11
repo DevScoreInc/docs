@@ -127,6 +127,7 @@ async function sendMail(messageData) {
 }
 
 function compileHandleBarTemplate(template_string, data) {
+    // HandleBars templating engine doc -->> https://handlebarsjs.com/
     // template_string is a your Handlbar template in String format
     // date is JSON object that will be passed to Handlbar to compile email template
     // Output: compiled template in string type
