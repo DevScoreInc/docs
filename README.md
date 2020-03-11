@@ -34,7 +34,7 @@ Inside your function you have access `_context` object which has following metho
 
 ```
 
-Available methods on '_context.dbLib' object: 
+Available methods on `_context.dbLib` object: 
 
 ```
 async function createVariable(name, type, value, documentId) {
