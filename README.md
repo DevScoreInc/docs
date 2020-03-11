@@ -45,14 +45,14 @@ async function createVariable(name, type, value, documentId) {
     // Output: 'success'
 }
 
-async function deleteVariable = (name, type, userDocumentId) {
+async function deleteVariable(name, type, userDocumentId) {
     // name: variable name
     // type: variable type which can be one of these ['string', 'encrypted-string', 'number', 'counter', 'bool', 'map', 'array']
     // (optional) documentId: ID (name) of document which your variable is stored at  
     // Output: 'success'
 }
 
-async function deleteTableOrDailyCounterVariable = (name, type, doc_id, userDocumentId) {
+async function deleteTableOrDailyCounterVariable(name, type, doc_id, userDocumentId) {
     // name: variable name
     // type: variable type which can be one of these ['table', 'daily-counter']
     // doc_id: it is the row ID in the table which you want to delete it. You can get doc_id when you call getTableRowsForTimePeriod or getDailyCounterVariableForTimePeriod
