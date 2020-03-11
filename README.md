@@ -9,7 +9,7 @@ DevScore provides Javascript runtime for business logic, database for storing yo
 
 Inside your function you have access `_context` object which has following methods:
 ```
-'_context' : it is an object with following attributes 
+'_context' : 
     'dbLib.createVariable': Async Function to create variable in the database 
     'dbLib.deleteVariable': Async Function to delete variable in the database 
     'dbLib.deleteTableOrDailyCounterVariable' : Async Function to delete a row from a table ('table' or 'daily-counter') variable types
