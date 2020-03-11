@@ -7,8 +7,6 @@ DevScore provides [Javascript runtime](https://app.devscore.dev/functions/editor
 https://app.devscore.dev/functions/webhook), and [Cronjob](https://app.devscore.dev/functions/cronjob) for invoking your functions on defined schedules. 
 
 
-[Start using DevScore](https://app.devscore.dev/login)
-
 Inside your function you have access `_context` object which has following methods:
 ```
 '_context' : 
