@@ -5,9 +5,9 @@ DevScore is an Automation PaaS for developers. DevScore makes it super easy to a
 
 DevScore provides Javascript runtime for business logic, database for storing your data and state management, POST and GET webhooks, and cronjob. 
 
+[Start using DevScore](https://app.devscore.dev/login "DevScore")
 
-
-Inside your function you have access `_context` object which has following methods.
+Inside your function you have access `_context` object which has following methods:
 ```
 '_context' : it is an object with following attributes 
     'dbLib.createVariable': Async Function to create variable in the database 
