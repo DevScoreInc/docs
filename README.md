@@ -28,7 +28,6 @@ Inside your function you have access to `_context` object which has following me
     'logger(logLevel, message)': Async Function to log your messages for debugging purposes. logLevel is one of ['error', 'debug', 'info']. message is either string or plain JSON
     'requestAgent': Module to create HTTP request. please visit https://github.com/request/request#readme for the documentation
     'momentLib': Module to work with dates. It is a wrapper over popular Moment module. Learn more at https://momentjs.com/docs/
-    'googleAPILib': Module to work with Google API. It is a wrapper over Google API node module. https://github.com/googleapis/google-api-nodejs-client
     'stripeLib': Module to work with Stripe API. It is a wrapper over Stripe node module. https://github.com/stripe/stripe-node
     'parameters': Parameters that is passed to your script
     'eventContext': Event (JSON) object that is passed by the event which triggers this function
@@ -151,19 +150,6 @@ async function getListOfAssets() {
 async function downloadAsset(asset_name) {
     // asset_name: name your file
     // Output: the content of stored file in string format
-}
-
-```
-Available methods on `_context.googleAPILib` object:
-```    
-function getInstance() {
-    // returns instance of Google API node module
-    // check this documentation -> https://github.com/googleapis/google-api-nodejs-client
-}
-
-function getOAuth2Client() {
-    // returns instance of google.auth.OAuth2 
-    // check this documentation -> https://github.com/googleapis/google-api-nodejs-client#oauth2-client
 }
 
 ```
