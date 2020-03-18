@@ -160,6 +160,12 @@ function getInstance() {
     // returns instance of Google API node module
     // check this documentation -> https://github.com/googleapis/google-api-nodejs-client
 }
+
+function getOAuth2Client() {
+    // returns instance of google.auth.OAuth2 
+    // check this documentation -> https://github.com/googleapis/google-api-nodejs-client#oauth2-client
+}
+
 ```
 Available methods on `_context.stripeLib` object:
 ```    
