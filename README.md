@@ -28,6 +28,8 @@ Inside your function you have access to `_context` object which has following me
     'logger(logLevel, message)': Async Function to log your messages for debugging purposes. logLevel is one of ['error', 'debug', 'info']. message is either string or plain JSON
     'requestAgent': Module to create HTTP request. please visit https://github.com/request/request#readme for the documentation
     'momentLib': Module to work with dates. It is a wrapper over popular Moment module. Learn more at https://momentjs.com/docs/
+    'googleAPILib': Module to work with Google API. It is a wrapper over Google API node module. https://github.com/googleapis/google-api-nodejs-client
+    'stripeLib': Module to work with Stripe API. It is a wrapper over Stripe node module. https://github.com/stripe/stripe-node
     'parameters': Parameters that is passed to your script
     'eventContext': Event (JSON) object that is passed by the event which triggers this function
     'eventContext.devscore_function_exec_result': Object (JSON) which will be present if this function runs as a result of previous function execution - the value of this attribute is the return value of previous function
@@ -151,4 +153,19 @@ async function downloadAsset(asset_name) {
     // Output: the content of stored file in string format
 }
 
+```
+Available methods on `_context.googleAPILib` object:
+```    
+function getInstance() {
+    // returns instance of Google API node module
+    // check this documentation -> https://github.com/googleapis/google-api-nodejs-client
+}
+```
+Available methods on `_context.stripeLib` object:
+```    
+function getInstance(stripeSecretKey) {
+    // stripeSecretKey is your Sripe_Secret_Key available in your Stripe dashboard
+    // returns instance of Stripe node module
+    // check this documentation -> https://github.com/stripe/stripe-node
+}
 ```
