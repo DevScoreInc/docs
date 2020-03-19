@@ -29,6 +29,7 @@ Inside your function you have access to `_context` object which has following me
     'requestAgent': Module to create HTTP request. please visit https://github.com/request/request#readme for the documentation
     'momentLib': Module to work with dates. It is a wrapper over popular Moment module. Learn more at https://momentjs.com/docs/
     'stripeLib': Module to work with Stripe API. It is a wrapper over Stripe node module. https://github.com/stripe/stripe-node
+    'awsLib': Module to work with Amazon AWS API. It is a wrapper over AWS node SDK. https://aws.amazon.com/sdk-for-node-js/
     'parameters': Parameters that is passed to your script
     'eventContext': Event (JSON) object that is passed by the event which triggers this function
     'eventContext.devscore_function_exec_result': Object (JSON) which will be present if this function runs as a result of previous function execution - the value of this attribute is the return value of previous function
@@ -152,6 +153,11 @@ async function downloadAsset(asset_name) {
     // Output: the content of stored file in string format
 }
 
+async function deleteAsset(asset_name) {
+    // asset_name: name your file
+    // Output: {'status': 'success', 'asset_name': asset_name}
+}
+
 ```
 Available methods on `_context.stripeLib` object:
 ```    
@@ -159,5 +165,13 @@ function getInstance(stripeSecretKey) {
     // stripeSecretKey is your Sripe_Secret_Key available in your Stripe dashboard
     // returns instance of Stripe node module
     // check this documentation -> https://github.com/stripe/stripe-node
+}
+```
+
+Available methods on `_context.awsLib` object:
+```    
+function getAWSInstance() {
+    // returns instance of AWS node SDK
+    // check this documentation -> https://www.npmjs.com/package/aws-sdk version 2.642.0
 }
 ```
