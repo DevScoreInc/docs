@@ -29,6 +29,7 @@ Inside your function you have access to `_context` object which has following me
     'requestAgent': Module to create HTTP request. please visit https://github.com/request/request#readme for the documentation
     'momentLib': Module to work with dates. It is a wrapper over popular Moment module. Learn more at https://momentjs.com/docs/
     'stripeLib': Module to work with Stripe API. It is a wrapper over Stripe node module. https://github.com/stripe/stripe-node
+    'googleAPILib': Module to work with Google API. It is a wrapper over Google API node module. https://github.com/googleapis/google-api-nodejs-client
     'awsLib': Module to work with Amazon AWS API. It is a wrapper over AWS node SDK. https://aws.amazon.com/sdk-for-node-js/
     'parameters': Parameters that is passed to your script
     'eventContext': Event (JSON) object that is passed by the event which triggers this function
@@ -175,3 +176,15 @@ function getAWSInstance() {
     // check this documentation -> https://www.npmjs.com/package/aws-sdk version 2.642.0
 }
 ```
+Available methods on `_context.googleAPILib` object:	
+```    	
+function getInstance() {	
+    // returns instance of Google API node module	
+    // check this documentation -> https://github.com/googleapis/google-api-nodejs-client	
+}	
+function getOAuth2Client() {	
+    // returns instance of google.auth.OAuth2 	
+    // check this documentation -> https://github.com/googleapis/google-api-nodejs-client#oauth2-client	
+}
+``` 
+
