@@ -36,6 +36,13 @@ Inside your function you have access to `_context` object which has following me
     'eventContext.devscore_function_exec_result': Object (JSON) which will be present if this function runs as a result of previous function execution - the value of this attribute is the return value of previous function
 
 ```
+Available properties on `_context.eventContext.devscore_function_exec_result` object: 
+
+```
+// This property is getting auto filled with name of function which emitted an onSuccess or onError event that caused invocation of the current function. Also, return value of prior function will be available if prior function returns a string or object.
+_context.eventContext.devscore_function_exec_result = {'function_name': 'xxxx', 'return': 'string_or_object'}
+
+```
 
 Available methods on `_context.dbLib` object: 
 
