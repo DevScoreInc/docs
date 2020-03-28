@@ -24,7 +24,8 @@ Inside your function you have access to `_context` object which has following me
     'emailLib.compileHandleBarTemplate(template_string, data)': Function to compile Handlebar templates to create dynamic emails.
     'fileLib.storeAsset(asset_name, contentType, data)': Async Function to store Data(string) to the cloud base file storage
     'fileLib.getListOfAssets()': Async function to get list of your assets stored in the storage
-    'fileLib.downloadAsset(asset_name)': Async function to get content of your asset from the sotrage
+    'fileLib.downloadAndReadAsset(asset_name)': Async function to get content of your asset from the sotrage
+    'fileLib.downloadAsset(asset_name)': Async function to download of your asset from the sotrage to the file system
     'fileLib.getOSTmpDir()': function to get operating system tmp directory path
     'fileLib.getFileReadStreamInstance(path, options)': function to get instance of fs.createReadStream(path, options)
     'fileLib.getCSVParserInstance()': function to get instance of fast-csv parser. https://c2fo.io/fast-csv/docs/introduction/getting-started
@@ -160,9 +161,14 @@ async function getListOfAssets() {
     // Output: [ { asset_name: 'my_template.txt' } ]
 }
 
+async function downloadAndReadAsset(asset_name) {
+    // asset_name: name your file
+    // Output: returns string content of the file ({ encoding: 'utf8' })
+}
+
 async function downloadAsset(asset_name) {
     // asset_name: name your file
-    // Output: the content of stored file in string format
+    // Output: the file path to your asset
 }
 
 async function deleteAsset(asset_name) {
