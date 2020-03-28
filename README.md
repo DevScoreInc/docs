@@ -166,6 +166,24 @@ async function deleteAsset(asset_name) {
     // Output: {'status': 'success', 'asset_name': asset_name}
 }
 
+function getCSVParserInstance() {
+    // returns instance of fast-csv parser module. Docs --> https://c2fo.io/fast-csv/docs/parsing/getting-started
+}
+
+function getCSVFormatterInstance() {
+    // returns instance of fast-csv formatter module. Docs --> https://c2fo.io/fast-csv/docs/formatting/getting-started
+}
+
+function getFileReadStreamInstance(path, options) {
+    // path (string) to your file (it can only access tmp directory of operating system)
+    // options docs --> https://nodejs.org/api/fs.html#fs_fs_createreadstream_path_options
+    returns instance fs.createReadStream of NodeJS
+}
+
+function getOSTmpDir() {
+    // returns tmp directory of operating system
+}
+
 ```
 Available methods on `_context.stripeLib` object:
 ```    
