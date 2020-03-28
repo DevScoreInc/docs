@@ -25,6 +25,10 @@ Inside your function you have access to `_context` object which has following me
     'fileLib.storeAsset(asset_name, contentType, data)': Async Function to store Data(string) to the cloud base file storage
     'fileLib.getListOfAssets()': Async function to get list of your assets stored in the storage
     'fileLib.downloadAsset(asset_name)': Async function to get content of your asset from the sotrage
+    'fileLib.getOSTmpDir()': function to get operating system tmp directory path
+    'fileLib.getFileReadStreamInstance(path, options)': function to get instance of fs.createReadStream(path, options)
+    'fileLib.getCSVParserInstance()': function to get instance of fast-csv parser. https://c2fo.io/fast-csv/docs/introduction/getting-started
+    'fileLib.getCSVFormatterInstance()': function to get instance of fast-csv formatter. https://c2fo.io/fast-csv/docs/introduction/getting-started
     'logger(logLevel, message)': Async Function to log your messages for debugging purposes. logLevel is one of ['error', 'debug', 'info']. message is either string or plain JSON
     'requestAgent': Module to create HTTP request. please visit https://github.com/request/request#readme for the documentation
     'momentLib': Module to work with dates. It is a wrapper over popular Moment module. Learn more at https://momentjs.com/docs/
@@ -177,7 +181,7 @@ function getCSVFormatterInstance() {
 function getFileReadStreamInstance(path, options) {
     // path (string) to your file (it can only access tmp directory of operating system)
     // options docs --> https://nodejs.org/api/fs.html#fs_fs_createreadstream_path_options
-    returns instance fs.createReadStream of NodeJS
+    // returns instance of fs.createReadStream(path, options)
 }
 
 function getOSTmpDir() {
