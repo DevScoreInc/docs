@@ -11,6 +11,7 @@ Inside your function you have access to `_context` object which has following me
 ```
 '_context' : 
     'dbLib.createVariable': Async Function to create variable in the database 
+    'dbLib.batchAddRowToTable': Async Function to add rows of data to a table in batch
     'dbLib.deleteVariable': Async Function to delete variable in the database 
     'dbLib.deleteTableOrDailyCounterVariable' : Async Function to delete a row from a table ('table' or 'daily-counter') variable types
     'dbLib.getDocument' : Async Function to retrieve document from database
@@ -57,6 +58,13 @@ async function createVariable(name, type, value, documentId) {
     // type: variable type which can be one of these ['string', 'encrypted-string', 'number', 'counter', 'table', 'daily-counter', 'bool', 'map', 'array']
     // value: variable value
     // (optional) documentId: ID (name) of document which you want to store this 
+    // Output: 'success'
+}
+
+async function batchAddRowToTable(name, dataArray, userDocumentId) {
+    // name: variable name
+    // dataArray: array of your data. Each element should be a JSON object. Maximum number of rows per call is 200.
+    // documentId: ID (name) of document which you want to store this 
     // Output: 'success'
 }
 
