@@ -112,7 +112,7 @@ async function getDailyCounterVariableForTimePeriod(variable_name, fromDate, toD
 
 async function getTableRowsWithFilterAndSort(variable_name, filter_variable_name, filter_operator, filter_value, sort, limit, documentId) {
     // variable_name: variable name
-    // filter_variable_name: variable name that you want to create filter for
+    // filter_variable_name: variable name that you want to create filter for (can't be empty and must not contain "*~/[]")
     // filter_operator: it can be one of following ['>','<', '<=', '>=', '==', 'array-contains', 'in', 'array-contains-any']
     // filter_value: filter value
     // sort: Boolean (true, or false) to sort the result based on variable_name
