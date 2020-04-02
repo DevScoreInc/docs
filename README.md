@@ -11,6 +11,17 @@ Modules:
 
 [DBLib](#dblib)
 
+[EmailLib](#emaillib)
+
+[FileLib](#filelib)
+
+[StripeLib](#stripelib)
+
+[GoogleApiLib](#googleapilib)
+
+[AwsLib](#awslib)
+
+
 Inside your function you have access to `_context` object which has following methods:
 ```
 '_context' : 
@@ -135,6 +146,7 @@ async function logger(logLevel, message) {
     // message is plain JSON with your logging data
 }
 ```
+# EmailLib
 Available Functions on `_context.emailLib` object: 
 ```    
 async function sendMail(messageData) {
@@ -160,6 +172,7 @@ function compileHandleBarTemplate(template_string, data) {
     // Output: compiled template in string type
 }
 ```
+# FileLib
 Available methods on `_context.fileLib` object: 
 ```    
 async function storeAsset(asset_name, contentType, data) {
@@ -207,6 +220,7 @@ function getOSTmpDir() {
 }
 
 ```
+# StripeLib
 Available methods on `_context.stripeLib` object:
 ```    
 function getInstance(stripeSecretKey) {
@@ -215,7 +229,7 @@ function getInstance(stripeSecretKey) {
     // check this documentation -> https://github.com/stripe/stripe-node
 }
 ```
-
+# AwsLib
 Available methods on `_context.awsLib` object:
 ```    
 function getAWSInstance() {
@@ -223,6 +237,7 @@ function getAWSInstance() {
     // check this documentation -> https://www.npmjs.com/package/aws-sdk version 2.642.0
 }
 ```
+# GoogleApiLib
 Available methods on `_context.googleAPILib` object:	
 ```    	
 function getInstance() {	
