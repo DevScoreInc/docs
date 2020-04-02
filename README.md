@@ -7,6 +7,10 @@ DevScore provides [Javascript runtime](https://app.devscore.dev/functions/editor
 https://app.devscore.dev/functions/webhook), and [Cronjob](https://app.devscore.dev/functions/cronjob) for invoking your functions on defined schedules. 
 
 
+Modules:
+
+[DBLib](#dblib)
+
 Inside your function you have access to `_context` object which has following methods:
 ```
 '_context' : 
@@ -49,7 +53,7 @@ Available properties on `_context.eventContext.devscore_function_exec_result` ob
 _context.eventContext.devscore_function_exec_result = {'function_name': 'xxxx', 'return': 'string_or_object'}
 
 ```
-
+# DBLib
 Available methods on `_context.dbLib` object: 
 
 ```
