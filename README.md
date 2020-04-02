@@ -7,19 +7,13 @@ DevScore provides [Javascript runtime](https://app.devscore.dev/functions/editor
 https://app.devscore.dev/functions/webhook), and [Cronjob](https://app.devscore.dev/functions/cronjob) for invoking your functions on defined schedules. 
 
 
-Modules:
-
-[DBLib](#dblib)
-
-[EmailLib](#emaillib)
-
-[FileLib](#filelib)
-
-[StripeLib](#stripelib)
-
-[GoogleApiLib](#googleapilib)
-
-[AwsLib](#awslib)
+* Modules:
+    * [DBLib](#dblib)
+    * [EmailLib](#emaillib)
+    * [FileLib](#filelib)
+    * [StripeLib](#stripelib)
+    * [GoogleApiLib](#googleapilib)
+    * [AwsLib](#awslib)
 
 
 Inside your function you have access to `_context` object which has following methods:
