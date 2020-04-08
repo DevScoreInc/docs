@@ -11,6 +11,7 @@ https://app.devscore.dev/functions/webhook), and [Cronjob](https://app.devscore.
     * [DBLib](#dblib)
     * [EmailLib](#emaillib)
     * [FileLib](#filelib)
+    * [SearchLib](#searchlib)
     * [StripeLib](#stripelib)
     * [GoogleApiLib](#googleapilib)
     * [AwsLib](#awslib)
@@ -45,6 +46,7 @@ Inside your function you have access to `_context` object which has following me
     'momentLib': Module to work with dates. It is a wrapper over popular Moment module. Learn more at https://momentjs.com/docs/
     'stripeLib': Module to work with Stripe API. It is a wrapper over Stripe node module. https://github.com/stripe/stripe-node
     'googleAPILib': Module to work with Google API. It is a wrapper over Google API node module. https://github.com/googleapis/google-api-nodejs-client
+    'searchLib': Module to use FlexSearch Node module to index and query text. Please refer to https://github.com/nextapps-de/flexsearch for more details.  
     'awsLib': Module to work with Amazon AWS API. It is a wrapper over AWS node SDK. https://aws.amazon.com/sdk-for-node-js/
     'parameters': Parameters that is passed to your script
     'eventContext': Event (JSON) object that is passed by the event which triggers this function
@@ -243,4 +245,12 @@ function getOAuth2Client() {
     // check this documentation -> https://github.com/googleapis/google-api-nodejs-client#oauth2-client	
 }
 ``` 
-
+# SearchLib
+Available methods on `_context.searchLib` object:
+```    
+function getFlexSearchInstance(options) {
+    // options are FlexSearch options -> https://github.com/nextapps-de/flexsearch#options
+    // returns instance of FlexSearch node module
+    // check this documentation ->https://github.com/nextapps-de/flexsearch
+}
+```
